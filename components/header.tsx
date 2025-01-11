@@ -3,7 +3,6 @@ import React from "react";
 import Logo from "@/public/images/KikinLogo.svg";
 import { BurgerMenu } from "./burger-menu";
 import { Button } from "./ui/button";
-import { CtaButton } from "./cta-button";
 
 export const Header: React.FC = () => {
   return (
@@ -24,7 +23,9 @@ export const Header: React.FC = () => {
             <Button className="text-sm border rounded-xl py-5 border-gray-400/40 uppercase font-GraphikMedium bg-[#122315]">
               log in
             </Button>
-            <CtaButton />
+            <button className="flex justify-center items-center bg-[#55dd4a] p-3 px-5 rounded-xl uppercase font-GraphikMedium text-sm">
+              get funding
+            </button>
           </div>
           <div className="lg:hidden mr-2">
             <BurgerMenu />

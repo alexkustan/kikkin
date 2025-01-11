@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const deaconBlack = localFont({
-  src: "./fonts/Deacon-black.woff",
+  src: "./fonts/DeaconTest-Black.otf",
   variable: "--font-deacon-black",
   weight: "900",
 });
