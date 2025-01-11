@@ -76,3 +76,15 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .late-white {
+    color: #f3ede4;
+  }
+  .dark-green {
+    color: #122315;
+  }
+  .light-green {
+    color: #55dd4a;
+  }
+}

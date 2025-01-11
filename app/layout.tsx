@@ -2,15 +2,25 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const deaconBlack = localFont({
+  src: "./fonts/Deacon-black.woff",
+  variable: "--font-deacon-black",
+  weight: "900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const deaconBold = localFont({
+  src: "./fonts/Deacon-bold.woff",
+  variable: "--font-deacon-bold",
+  weight: "700",
+});
+const GraphikMedium = localFont({
+  src: "./fonts/GraphikMedium.woff",
+  variable: "--font-graphik-medium",
+  weight: "500",
+});
+const GraphikSemibold = localFont({
+  src: "./fonts/GraphikSemibold.woff",
+  variable: "--font-graphik-semibold",
+  weight: "600",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${deaconBlack.variable} ${deaconBold.variable} ${GraphikMedium.variable} ${GraphikSemibold.variable} antialiased`}
       >
         {children}
       </body>
